@@ -9,13 +9,13 @@ public class ButtonPage : MonoBehaviour
     
     public void Select()
     {
-        image.sprite = chooseImage;
+        //image.sprite = chooseImage;
         image.color = ChooseColor32;
     }
     
     public void UnSelect()
     {
-        image.sprite = unChooseIamge;
+        //image.sprite = unChooseIamge;
         image.color = unChooseColor;
     }
 }

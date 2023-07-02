@@ -9,12 +9,9 @@ public class SanPhamUI : MonoBehaviour
     public Image image;
     public TextMeshProUGUI name, thongTin, gia;
     public Button button;
+    public Button buttonSave;
     private int ID;
-
-    void OnValidate()
-    {
-        button = GetComponent<Button>();
-    }
+    public GameObject saveObj;
 
     void Start()
     {
@@ -23,15 +20,18 @@ public class SanPhamUI : MonoBehaviour
 
     private void ShowInfo()
     {
-        UIManager.Instance.ShowSanPham(ID);
+        //UIManager.Instance.ShowSanPham(ID);
+        PurchasingManager.Instance.Show(ID);
     }
 
     public void SetInfo(SanPham product)
     {
         ID = product.ID;
         image.sprite = product.anh;
+        //image.SetNativeSize();
         name?.SetText(product.name);
         gia?.SetText(product.gia);
         thongTin?.SetText(product.thongTin);
+        saveObj.SetActive(GameDataManager.Instance.playerData.save.Find(i => i.ID == this.ID) != null);
     }
 }

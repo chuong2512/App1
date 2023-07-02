@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class AllBaiViet : ManHinh
 {
-    // Start is called before the first frame update
+    public SanPhamUI sanPham;
+    public Transform content;
+    
     void Start()
     {
-        
-    }
+        var products = GameDataManager.Instance.SanPhamSo.SanPham;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        for (int i = 0; i < products.Length; i++)
+        {
+            var obj = Instantiate(sanPham, content);
+
+            obj.SetInfo(products[i]);
+        }
     }
 }

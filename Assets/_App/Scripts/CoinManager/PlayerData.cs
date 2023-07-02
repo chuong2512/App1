@@ -11,6 +11,7 @@ public class PlayerData : BaseData
 {
     public List<ThongTinDangNhap> accounts;
     public List<DonHang> donHangs;
+    public List<SanPham> save;
 
     public long time;
     public int donHangID;
@@ -49,6 +50,7 @@ public class PlayerData : BaseData
         donHangID = 0;
         accounts = new List<ThongTinDangNhap>();
         donHangs = new List<DonHang>();
+        save = new List<SanPham>();
         Save();
     }
 
@@ -67,6 +69,27 @@ public class PlayerData : BaseData
         donHangID++;
         Save();
     }
+
+    public void SaveSanPham(SanPham sanPham)
+    {
+        if (!save.Contains(sanPham))
+        {
+            save.Add(sanPham);
+        }
+        
+        Save();
+    }
+
+    public void RemoveSanPham(SanPham sanPham)
+    {
+        if (save.Contains(sanPham))
+        {
+            save.Remove(sanPham);
+        }
+        
+        Save();
+    }
+    
 
     public void ThemTaiKhoan(ThongTinDangNhap thongTinDangNhap)
     {

@@ -14,22 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SanPham:
   - ID: 0
-    anh: {fileID: 0}
+    anh: {fileID: 21300000, guid: 6493cbfe43da9b241a838e8a2762cb06, type: 3}
     thongTin: 
-    gia: 
-    name: 
+    gia: "500.000 \u0111"
+    name: "G\u0103ng tay 3Seconds"
   - ID: 1
-    anh: {fileID: 0}
+    anh: {fileID: 21300000, guid: 409d62c6a1476ed40aaa6ba45401e463, type: 3}
     thongTin: 
-    gia: 
-    name: 
+    gia: "500.000 \u0111"
+    name: "G\u1EADy Bi-a Magician Pitbull 03"
   - ID: 2
-    anh: {fileID: 0}
+    anh: {fileID: 21300000, guid: db3fef93fdcc522498fdb8d4f60fe679, type: 3}
     thongTin: 
-    gia: 
-    name: 
+    gia: "2.000.000 \u0111"
+    name: "B\xE0n kinh doanh"
   - ID: 3
-    anh: {fileID: 0}
+    anh: {fileID: 21300000, guid: 37cc99ce27fe00f498448b90fad9aa75, type: 3}
     thongTin: 
-    gia: 
-    name: 
+    gia: "20.000.000 \u0111"
+    name: "B\xE0n kinh doanh"

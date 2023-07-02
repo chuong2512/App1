@@ -10,14 +10,19 @@ public class ManHinh : MonoBehaviour
     public TextMeshProUGUI tieuDe;
     public Button buttonBack;
 
-    void Start()
+    protected virtual void Start()
     {
         tieuDe.SetText(title);
-        buttonBack.onClick.AddListener(() => SetActive(false));
+        buttonBack.onClick.AddListener(Back);
     }
 
     public void SetActive(bool b)
     {
         gameObject.SetActive(b);
+    }
+
+    protected virtual void Back()
+    {
+        SetActive(false);
     }
 }

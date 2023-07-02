@@ -14,22 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SanPham:
   - ID: 0
-    anh: {fileID: 0}
-    thongTin: 
+    anh: {fileID: 21300000, guid: 4af4e0cf21447c948868c066bb1da0b5, type: 3}
+    thongTin: Lorem ipsum dolor sit amet consectetur. Metusm ipsum dolor sit amet
+      consectem ipsum dolor sit amet consectem ipsum dolor sit amet consectem ipsum
+      dolor sit amet consectem ipsum dolor sit amet consecte. Lorem ipsum dolor sit
+      amet consectetur. Metusm ipsum dolor sit amet consectem ipsum dolor sit amet
+      consectem ipsum dolor sit amet consectem ipsum dolor sit amet consectem ipsum
+      dolor sit amet consecte. Lorem ipsum dolor sit amet consectetur. Metusm ipsum
+      dolor sit amet consectem ipsum dolor sit amet consectem ipsum dolor sit amet
+      consectem ipsum dolor sit amet consectem ipsum dolor sit amet consecte.
     gia: 
-    name: 
+    name: "H\u01B0\u1EDBng D\u1EABn K\u1EF9 Thu\u1EADt C\xE1ch \u0110\xE1nh Bida
+      L\u1ED7, Bida Ph\u0103ng C\u01A1 B\u1EA3n Cho Ng\u01B0\u1EDDi M\u1EDBi!"
   - ID: 1
-    anh: {fileID: 0}
-    thongTin: 
+    anh: {fileID: 21300000, guid: 44cc3126fb2c4c544878b225380f6c84, type: 3}
+    thongTin: Lorem ipsum dolor sit amet consectetur. Metusm ipsum dolor sit amet
+      consectem ipsum dolor sit amet consectem ipsum dolor sit amet consectem ipsum
+      dolor sit amet consectem ipsum dolor sit amet consecte. Lorem ipsum dolor sit
+      amet consectetur. Metusm ipsum dolor sit amet consectem ipsum dolor sit amet
+      consectem ipsum dolor sit amet consectem ipsum dolor sit amet consectem ipsum
+      dolor sit amet consecte. Lorem ipsum dolor sit amet consectetur. Metusm ipsum
+      dolor sit amet consectem ipsum dolor sit amet consectem ipsum dolor sit amet
+      consectem ipsum dolor sit amet consectem ipsum dolor sit amet consecte.
     gia: 
-    name: 
-  - ID: 2
-    anh: {fileID: 0}
-    thongTin: 
-    gia: 
-    name: 
-  - ID: 3
-    anh: {fileID: 0}
-    thongTin: 
-    gia: 
-    name: 
+    name: "H\u01B0\u1EDBng D\u1EABn K\u1EF9 Thu\u1EADt C\xE1ch \u0110\xE1nh Bida
+      L\u1ED7, Bida Ph\u0103ng C\u01A1 B\u1EA3n Cho Ng\u01B0\u1EDDi M\u1EDBi!"

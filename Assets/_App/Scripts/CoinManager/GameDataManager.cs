@@ -12,7 +12,7 @@ public class GameDataManager : PersistentSingleton<GameDataManager>
     [HideInInspector] public PlayerData playerData;
 
     [InlineEditor()] public SanPhamSO SanPhamSo;
-    [InlineEditor()] public SanPhamSO BaiViet;
+    [InlineEditor()] public SanPhamSO BaiVietSO;
 
     private void Start()
     {
@@ -103,5 +103,21 @@ public class GameDataManager : PersistentSingleton<GameDataManager>
     {
         var sanPham = SanPhamSo.GetSanPhamWithID(buyId);
         playerData.TaoDon(sanPham);
+    }
+
+    public bool TickSave(int id)
+    {
+        var sanPham = SanPhamSo.GetSanPhamWithID(id);
+        
+        if (playerData.save.Contains(sanPham))
+        {
+            playerData.RemoveSanPham(sanPham);
+            return false;
+        }
+        else
+        {
+            playerData.SaveSanPham(sanPham);
+            return true;
+        }
     }
 }
