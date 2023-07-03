@@ -7,20 +7,19 @@ public class QuanLyDonHang : Singleton<QuanLyDonHang>
 {
     public SanPhamUI sanPham;
     public Transform content;
-    
+
     void Start()
     {
-      Refresh();
+        Refresh();
     }
 
     public void Refresh()
     {
-        var count = content.childCount;
-        for (int i = 0; i < count; i++)
+        foreach (Transform child in content)
         {
-            Destroy(content.GetChild(0).gameObject);
+            GameObject.Destroy(child.gameObject);
         }
-        
+
         var products = GameDataManager.Instance.playerData.donHangs;
 
         for (int i = 0; i < products.Count; i++)
