@@ -12,6 +12,7 @@ public class SanPham
 {
     public int ID;
     public Sprite anh;
+    public Sprite anhHai;
     public string thongTin;
     public string gia;
     public string name;

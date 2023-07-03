@@ -61,6 +61,7 @@ public class PlayerData : BaseData
             donHangID = donHangID,
             ID = sanPham.ID,
             anh = sanPham.anh,
+            anhHai = sanPham.anhHai,
             gia = sanPham.gia,
             name = sanPham.name,
             thongTin = sanPham.thongTin

@@ -9,10 +9,14 @@ public class Shop : MonoBehaviour
     public SanPhamUI[] baiViet;
 
     public Button priBtn; 
+    public Button xemThem1; 
+    public Button xemThem2; 
 
     void Start()
     {
         priBtn.onClick.AddListener(ShowPri);
+        xemThem1.onClick.AddListener(XemThem1);
+        xemThem2.onClick.AddListener(XemThem2);
         
         for (int i = 0; i < sanPham.Length; i++)
         {
@@ -27,8 +31,18 @@ public class Shop : MonoBehaviour
         }
     }
 
+    private void XemThem1()
+    {
+        UIManager.Instance.ShowAllSanPham();
+    }
+
+    private void XemThem2()
+    {
+        UIManager.Instance.ShowAllBaiViet();
+    }
+
     private void ShowPri()
     {
-        
+        UIManager.Instance.Pri.SetActive(true);
     }
 }

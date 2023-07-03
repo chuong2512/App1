@@ -12,6 +12,7 @@ public class SanPhamUI : MonoBehaviour
     public Button buttonSave;
     private int ID;
     public GameObject saveObj;
+    public bool isBaiViet;
 
     void Start()
     {
@@ -21,7 +22,14 @@ public class SanPhamUI : MonoBehaviour
     private void ShowInfo()
     {
         //UIManager.Instance.ShowSanPham(ID);
-        PurchasingManager.Instance.Show(ID);
+        if (isBaiViet)
+        {
+            UIManager.Instance.ShowSanPham(ID);
+        }
+        else
+        {
+            PurchasingManager.Instance.Show(ID);
+        }
     }
 
     public void SetInfo(SanPham product)

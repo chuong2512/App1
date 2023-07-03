@@ -7,19 +7,17 @@ using UnityEngine.Purchasing;
 
 public class Key
 {
-    public const string PACK1 = "game54_pack1";
-    public const string PACK2 = "game54_pack2";
-    public const string PACK3 = "game54_pack3";
-    public const string PACK4 = "game54_pack4";
-    public const string PACK5 = "game54_pack5";
-    public const string PACK6 = "game54_pack6";
+    public const string PACK1 = "app1_pack1";
+    public const string PACK2 = "app1_pack2";
+    public const string PACK3 = "app1_pack3";
+    public const string PACK4 = "app1_pack4";
 
 
-    public const string PACK1_REGISTER = "register_game54_pack1";
-    public const string PACK2_REGISTER = "register_game54_pack2";
-    public const string PACK3_REGISTER = "register_game54_pack3";
-    public const string PACK4_REGISTER = "register_game54_pack4";
-    public const string PACK5_REGISTER = "register_game54_pack5";
+    public const string PACK1_REGISTER = "register_app1_pack1";
+    public const string PACK2_REGISTER = "register_app1_pack2";
+    public const string PACK3_REGISTER = "register_app1_pack3";
+    public const string PACK4_REGISTER = "register_app1_pack4";
+    public const string PACK5_REGISTER = "register_app1_pack5";
 }
 
 public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
@@ -56,8 +54,6 @@ public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
         builder.AddProduct(Key.PACK2, ProductType.Consumable);
         builder.AddProduct(Key.PACK3, ProductType.Consumable);
         builder.AddProduct(Key.PACK4, ProductType.Consumable);
-        builder.AddProduct(Key.PACK5, ProductType.Consumable);
-        builder.AddProduct(Key.PACK6, ProductType.Consumable);
         builder.AddProduct(Key.PACK1_REGISTER, ProductType.Subscription);
         builder.AddProduct(Key.PACK2_REGISTER, ProductType.Subscription);
         builder.AddProduct(Key.PACK3_REGISTER, ProductType.Subscription);

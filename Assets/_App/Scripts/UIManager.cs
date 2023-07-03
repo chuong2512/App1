@@ -9,14 +9,11 @@ public class UIManager : Singleton<UIManager>
     public ThongTinSanPham ThongTinSanPham;
     public AllBaiViet AllBaiViet;
     public AllSanPham AllSanPham;
+    public ManHinh Pri;
 
 
     void OnValidate()
     {
-        ThongTinBaiViet = GetComponentInChildren<ThongTinBaiViet>();
-        ThongTinSanPham = GetComponentInChildren<ThongTinSanPham>();
-        AllBaiViet = GetComponentInChildren<AllBaiViet>();
-        AllSanPham = GetComponentInChildren<AllSanPham>();
     }
 
     public void ShowSanPham(int id)
@@ -35,9 +32,10 @@ public class UIManager : Singleton<UIManager>
         AllBaiViet.SetActive(true);
     }
 
-    public void ShowTTBaiViet()
+    public void ShowTTBaiViet(int id)
     {
         ThongTinBaiViet.SetActive(true);
+        ThongTinBaiViet.ShowInfo(id);
     }
 
     public void ShowAllBaiViet()

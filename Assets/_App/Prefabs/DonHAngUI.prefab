@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 3595332343965661353}
   - component: {fileID: 3595332343965661352}
   m_Layer: 5
-  m_Name: SanPhamUI
+  m_Name: DonHAngUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -324,10 +324,11 @@ MonoBehaviour:
   image: {fileID: 7250109434741070253}
   name: {fileID: 4367558040872131515}
   thongTin: {fileID: 0}
-  gia: {fileID: 4047034400767218720}
+  gia: {fileID: 0}
   button: {fileID: 1689506680547768331}
   buttonSave: {fileID: 0}
   saveObj: {fileID: 5832807628185263644}
+  isBaiViet: 0
 --- !u!1 &5832807628185263644
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,7 +441,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 56.786, y: 55.2}
-  m_SizeDelta: {x: 303.5174, y: 50}
+  m_SizeDelta: {x: 347.7674, y: 50}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &4336820316861667129
 CanvasRenderer:
@@ -470,7 +471,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "\u0110ang v\u1EADn chuy\u1EC3n..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -497,8 +498,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 37.69
+  m_fontSizeBase: 37.69
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

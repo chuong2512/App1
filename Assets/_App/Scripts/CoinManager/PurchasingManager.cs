@@ -1,16 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using TimDoVat;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PurchasingManager : Singleton<PurchasingManager>
 {
+    public Button huyBtn, datCocBtn;
+    public GameObject shipCod, datCoc, go;
+
+    void Start()
+    {
+        huyBtn.onClick.AddListener(Huy);
+        datCocBtn.onClick.AddListener(DatCoc);
+    }
+
+    private void Huy()
+    {
+        go.SetActive(false);
+    }
+    
+    private void DatCoc()
+    {
+        shipCod.SetActive(false);
+        datCoc.SetActive(true);
+    }
+
     public void OnPressDown(int i)
     {
         IAPManager.OnPurchaseSuccess = () =>
         {
+            Debug.Log($"Mua san pham id : {ButtonBuy.buyID}");
             GameDataManager.Instance.TaoDonHang(ButtonBuy.buyID);
-            gameObject.SetActive(false);
+            go.SetActive(false);
         };
 
         switch (i)
@@ -27,20 +47,17 @@ public class PurchasingManager : Singleton<PurchasingManager>
             case 4:
                 IAPManager.Instance.BuyProductID(Key.PACK4);
                 break;
-            case 5:
-                IAPManager.Instance.BuyProductID(Key.PACK5);
-                break;
-            case 6:
-                IAPManager.Instance.BuyProductID(Key.PACK6);
-                break;
         }
     }
 
     public void Show(int id)
     {
         ButtonBuy.buyID = id;
-        gameObject.SetActive(true);
+        go.SetActive(true);
+        shipCod.SetActive(true);
+        datCoc.SetActive(false);
     }
+
 
 
     public void Sub(int i)

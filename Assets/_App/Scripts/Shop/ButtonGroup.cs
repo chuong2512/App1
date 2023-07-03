@@ -40,6 +40,11 @@ public class ButtonGroup : MonoBehaviour
                 btns[j].UnSelect();
             }
         }
+
+        if (i == 2)
+        {
+            QuanLyDonHang.Instance.Refresh();
+        }
     }
 
     void Choose(int i)
