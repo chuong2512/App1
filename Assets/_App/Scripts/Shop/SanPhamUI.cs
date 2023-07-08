@@ -24,7 +24,7 @@ public class SanPhamUI : MonoBehaviour
         //UIManager.Instance.ShowSanPham(ID);
         if (isBaiViet)
         {
-            //UIManager.Instance.ShowSanPham(ID);
+            UIManager.Instance.ShowSanPham(ID);
         }
         else
         {

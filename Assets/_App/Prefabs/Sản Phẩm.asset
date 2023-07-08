@@ -12,24 +12,91 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de118c01cd375348bc5b06db5d3937a, type: 3}
   m_Name: "S\u1EA3n Ph\u1EA9m"
   m_EditorClassIdentifier: 
+  name: 
+  infor: 
+  folderPath: "Assets/\u1EA2nh/sprites"
   SanPham:
   - ID: 0
     anh: {fileID: 21300000, guid: 6493cbfe43da9b241a838e8a2762cb06, type: 3}
+    anhHai: {fileID: 0}
     thongTin: 
     gia: "500.000 \u0111"
     name: "G\u0103ng tay 3Seconds"
   - ID: 1
     anh: {fileID: 21300000, guid: 409d62c6a1476ed40aaa6ba45401e463, type: 3}
+    anhHai: {fileID: 0}
     thongTin: 
     gia: "500.000 \u0111"
     name: "G\u1EADy Bi-a Magician Pitbull 03"
   - ID: 2
     anh: {fileID: 21300000, guid: db3fef93fdcc522498fdb8d4f60fe679, type: 3}
+    anhHai: {fileID: 0}
     thongTin: 
     gia: "2.000.000 \u0111"
     name: "B\xE0n kinh doanh"
   - ID: 3
     anh: {fileID: 21300000, guid: 37cc99ce27fe00f498448b90fad9aa75, type: 3}
+    anhHai: {fileID: 0}
     thongTin: 
     gia: "20.000.000 \u0111"
+    name: "B\xE0n kinh doanh"
+  - ID: 4
+    anh: {fileID: 21300000, guid: c0c2def42cff37b4ba29e7b43ae6dbd3, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "2.000.000 \u0111"
+    name: "B\xE0n kinh doanh"
+  - ID: 5
+    anh: {fileID: 21300000, guid: 660438aa243b8ba40b53b20aaea2b3b3, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "310.000 \u0111"
+    name: "B\xE0n kinh doanh"
+  - ID: 6
+    anh: {fileID: 21300000, guid: aa733cd72df81e1488f10eec2d8804c5, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "270.000 \u0111"
+    name: "B\xE0n kinh doanh"
+  - ID: 7
+    anh: {fileID: 21300000, guid: c056e484a2744ca4581f931fc5d2aa50, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "17.000.000 \u0111"
+    name: "B\xE0n kinh doanh"
+  - ID: 8
+    anh: {fileID: 21300000, guid: 2b31971a49ea86b4e9f9333783a7d6fa, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "260.000 \u0111"
+    name: "B\xE0n kinh doanh"
+  - ID: 9
+    anh: {fileID: 21300000, guid: 152abb428a77a91409c65a3cdeb9cced, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "910.000 \u0111"
+    name: "B\xE0n kinh doanh"
+  - ID: 10
+    anh: {fileID: 21300000, guid: 7ca1d3088ff4a90438d08d2b4d710b6c, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "7.000.000 \u0111"
+    name: "B\xE0n kinh doanh"
+  - ID: 11
+    anh: {fileID: 21300000, guid: a29087a495f52d6459990a298e6322c7, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "19.000.000 \u0111"
+    name: "B\xE0n kinh doanh"
+  - ID: 12
+    anh: {fileID: 21300000, guid: 57cfce0579d175b419a4b0360c777b88, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "260.000 \u0111"
+    name: "B\xE0n kinh doanh"
+  - ID: 13
+    anh: {fileID: 21300000, guid: 5412661ed2a248f41a28ac9234579248, type: 3}
+    anhHai: {fileID: 0}
+    thongTin: 
+    gia: "18.000.000 \u0111"
     name: "B\xE0n kinh doanh"
