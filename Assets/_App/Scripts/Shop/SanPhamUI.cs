@@ -22,14 +22,7 @@ public class SanPhamUI : MonoBehaviour
     private void ShowInfo()
     {
         //UIManager.Instance.ShowSanPham(ID);
-        if (isBaiViet)
-        {
             UIManager.Instance.ShowSanPham(ID);
-        }
-        else
-        {
-            PurchasingManager.Instance.Show(ID);
-        }
     }
 
     public void SetInfo(SanPham product)
